@@ -34,6 +34,18 @@ body {
     font-weight: lighter; 
 }
 
+/* Menu mobile */
+
+.fa-solid{
+    color: #F1BF7B;
+    font-size: 2rem;
+}
+
+#check_menu, .navegacion label{
+    display: none;
+}
+
+
 /* Header */
 header{
     position: sticky;
@@ -54,6 +66,7 @@ nav.navegacion {
     align-items: center;
     padding: 0 3.5rem;
     justify-content: space-between;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
 }
 
 .cont_logotipo {
@@ -66,7 +79,7 @@ nav.navegacion {
 .cont_nav {
     width: 42%;
     font-family: 'Vollkorn-Regular';
-    font-size: 1.3rem;
+    font-size: 1.3em;
     display: flex;
     align-content: center;
     justify-content: space-around;
@@ -82,7 +95,7 @@ ul li a {
 }
 
 .cont_busqueda {
-    width: 18rem;
+    width: 16rem;
     background-color: #F1BF7B;
     border-radius: 50px;
     opacity: 10%;
@@ -198,7 +211,9 @@ ul li a {
 
 footer{
     background-color: #262626;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
 }
+
 .pie_pag {
     width: 100%;
     display: flex;
@@ -316,10 +331,6 @@ footer{
     height: 500px;
     background-color: #f2f2f2;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
-
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
 }
 
 .card_1{
@@ -340,7 +351,6 @@ footer{
 }
 
 .card_img1{
-    background-color: #F1BF7B;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -352,4 +362,33 @@ footer{
 
 .card_2 img{
     background-size: cover;
+}
+
+
+/* Media queries */
+
+@media (max-width:1360px){
+    .iconos_header, .cont_nav{
+        display: none;
+    }
+}
+
+
+@media (max-width:1360px){
+    .navegacion label{
+        display: block;
+    }
+}
+
+@media (max-width:1266px) and (min-width:360px){
+    .class_logo{
+        width: 11.5625rem;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:800px){
+    .cont_nav{
+        width: 70%;
+    }
 }
