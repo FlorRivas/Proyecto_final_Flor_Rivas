@@ -371,10 +371,6 @@ footer{
     .iconos_header, .cont_nav{
         display: none;
     }
-}
-
-
-@media (max-width:1360px){
     .navegacion label{
         display: block;
     }
