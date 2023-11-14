@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +22,14 @@
     src: url('../fonts/Vollkorn-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Vollkorn-Italic';
+    src: url('../fonts/Vollkorn-Italic.ttf');
+}
+
 body {
     font-family: 'MerriweatherSans-Light';
-    background-color: white;
+    background-color: #262626;
     overflow-x: hidden;
     font-weight: lighter; 
 }
@@ -52,7 +58,7 @@ nav.navegacion {
 
 .cont_logotipo {
     display: flex;
-    width: 14%;
+    width: 16%;
     align-items: center;
     justify-content: start;
 }
@@ -60,7 +66,7 @@ nav.navegacion {
 .cont_nav {
     width: 42%;
     font-family: 'Vollkorn-Regular';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     align-content: center;
     justify-content: space-around;
@@ -101,9 +107,9 @@ ul li a {
     margin: 0px 0px 0px 10px;
 }
 
-/* termina header */
+/* Fin de header */
 
-
+/* Main */
 .cont_general {
     position: relative;
 }
@@ -113,6 +119,7 @@ ul li a {
     background-image: url(../img/portada.png);
     width: 1920px;
     height: 1122px;
+    margin-bottom: 2.5rem;
 }
 
 .ps_absolute {
@@ -127,18 +134,32 @@ ul li a {
     top: 380px;
 }
 
+.pdd_top{
+    padding-bottom: 36px;
+}
+
+/* Colores Primarios */
+/* .c_p1{
+    color: #F1BF7B;
+}
+
+.c_p2{
+    color: #262626; 
+} */
+
+/* Colores secundarios */
+.c_s1{
+    color: #fbeed9;
+}
+
 .txt_enun {
     font-family: 'Montserrat-Regular';
-    font-size: 56px;
-    color: #fbeed9;
-    padding-bottom: 50px;
+    font-size: 3.5rem;
 }
 
 .txt_descripcion {
     font-family: 'Montserrat-Regular';
-    font-size: 30px;
-    color: #fbeed9;
-    margin-bottom: 40px;
+    font-size: 1.875rem;
 }
 
 /* BOTONES */
@@ -170,7 +191,7 @@ ul li a {
 }
 
 
-/* termina main */
+/* Fin de main */
 
 
 /*  Footer */
@@ -181,7 +202,7 @@ footer{
 .pie_pag {
     width: 100%;
     display: flex;
-    padding: 4rem 4.5%;
+    padding: 4rem 3%;
     flex-flow: row wrap;
     justify-content: space-between;
     gap: 2%;
@@ -237,10 +258,10 @@ footer{
     justify-content: space-evenly; 
 }
 
-.cont_pie_selec h2 {
+.cont_pie_selec h2{
     font-family: 'Vollkorn-Regular';
     color: #F1BF7B;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: normal;
   }
 
@@ -262,4 +283,73 @@ footer{
 }
 .bi_ig{
     background-image: url('../img/Instagram.svg');
+}
+
+
+/* Pag Nosotros */
+#nosotros h2 {
+    font-family: 'Vollkorn-Regular';
+    font-size: 2.2rem;
+    text-align: center;
+    color: #F1BF7B;
+}
+
+.cont_gen_nos{
+    width: 100%;
+    padding: 2rem 3%;
+}
+/* background-color: #86A2BB; */
+
+/* Aplicando Grid */
+.cont_nosotros{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 4%;
+    /* Agregando grillas */
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". card_1 card_2 .";
+}
+
+.card_nos{
+    height: 500px;
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.card_1{
+    background-image: url('/img/pres_1a.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: card_1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card_1 p{
+    padding: 30px;
+}
+
+.card_img1{
+    background-color: #F1BF7B;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_2{
+    grid-area: card_2;
+}
+
+.card_2 img{
+    background-size: cover;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Por Amor</title>
     <link rel="shortcut icon" href="./img/iso.ico"  type="image/x-icon">
     <!-- linkear nuestro css -->
     <link rel="stylesheet" href="./css/estilos.css">
@@ -21,7 +21,7 @@
                     <a href="/">Inicio</a>
                 </li>
                 <li class="nav_item">
-                    <a href="./paginas/nosotros.html">Nosotros</a>
+                     <a href="#nosotros">Nosotros</a> <!--./paginas/nosotros.html -->
                 </li>
                 <li class="nav_item">
                     <a href="./paginas/productos.html">Productos</a>
@@ -33,8 +33,7 @@
                     <a href="./paginas/contactanos.html">Cont&#225;ctanos</a>
                 </li>
             </ul>
-
-            
+             
             <div class="iconos_header">
                 <div class="cont_busqueda">
                     <input id="search_text" type="text" size="20" placeholder="Búsqueda...">
@@ -45,20 +44,33 @@
             </div>
         </nav>
     </header>
-    <!-- Fin de Cabecera -->
+    <!-- Fin de cabecera -->
+    <!-- Main -->
     <main class="cont_general">
-        <div id="img_principal">
+        <section id="img_principal">
             <div id="txt_enunciado" class="ps_absolute ps_left ps_top">
-                <p class="txt_enun">Una manera<br>de mostrar amor</p>
-                <p class="txt_descripcion">Descubre c&oacute;mo<br>en nuestro catálogo</p>
+                <h1 class="txt_enun c_s1 pdd_top">Una manera<br>de mostrar amor</h1>
+                <p class="txt_descripcion c_s1 pdd_top">Descubre c&oacute;mo<br>en nuestro catálogo</p>
                 <a href="" class="btn_desk text_Desk">Descarga
                     <img src="./img/descarga.svg" alt="descarga" class="img_descarga">
                 </a>
             </div>
-            
-        </div>  
+        </section>
+        <section id="nosotros" class="cont_gen_nos">
+          <h2>Nosotros</h2>
+          <section class="cont_nosotros">
+            <div class="card_nos card_1">
+              <p>Somos <strong>POR AMOR</strong>, una marca creada con la finalidad de ayudar a personas que deseen demostrar sus sentimientos a través de obsequios y detalles con mensajes llenos de paz, amor y reflexión espiritual.
+                Nos enfocamos en ofrecer productos de calidad y experiencias inigualables para cada uno de nuestros clientes.</p>
+            </div>
+            <div class="card_nos card_2">
+              <img src="./img/pres_1b.png" alt="Imagen de regalo" class="card_img1">
+            </div>
+          </section>
+
+        </section>
     </main>
-    <!-- Fin Main -->
+    <!-- Fin main -->
     <!-- Footer -->
     <footer>
         <section class="pie_pag">
@@ -124,5 +136,6 @@
             </div>
         </section>
     </footer>
+    <!-- Fin footer -->
 </body>
 </html>
