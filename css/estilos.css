@@ -87,6 +87,7 @@ nav.navegacion {
 
 ul li a {
     color: #F1BF7B;
+    text-decoration: none;
 }
 
 .cont_nav .nav_item {
@@ -270,7 +271,8 @@ footer{
 .pie_pag ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+    padding-left: 0;
 }
 
 .cont_pie_selec h2{
