@@ -55,6 +55,7 @@ header{
 
 .class_logo {
     width: 14.375rem;
+    min-width: 11.5625rem; /*12.4375rem */
 }
 
 nav.navegacion {
@@ -83,6 +84,10 @@ nav.navegacion {
     display: flex;
     align-content: center;
     justify-content: space-around;
+}
+
+#menu{
+    margin: 0 auto;
 }
 
 ul li a {
@@ -130,10 +135,28 @@ ul li a {
 
 #img_principal {
     position: relative;
+    width: 100vw;
+    height: 78rem;
     background-image: url(../img/portada.png);
-    width: 1920px;
-    height: 1122px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
     margin-bottom: 2.5rem;
+}
+
+#img_principal::after {
+    content: '';
+    background: #262626;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+#txt_enunciado{
+    z-index: 1;
 }
 
 .ps_absolute {
@@ -152,16 +175,7 @@ ul li a {
     padding-bottom: 36px;
 }
 
-/* Colores Primarios */
-/* .c_p1{
-    color: #F1BF7B;
-}
-
-.c_p2{
-    color: #262626; 
-} */
-
-/* Colores secundarios */
+/* Color secundario */
 .c_s1{
     color: #fbeed9;
 }
@@ -169,11 +183,13 @@ ul li a {
 .txt_enun {
     font-family: 'Montserrat-Regular';
     font-size: 3.5rem;
+    margin-bottom: 0;
 }
 
 .txt_descripcion {
     font-family: 'Montserrat-Regular';
     font-size: 1.875rem;
+    margin-bottom: 0;
 }
 
 /* BOTONES */
@@ -188,6 +204,7 @@ ul li a {
     border-radius: 40px;
     flex-direction: row;
     justify-content: center;
+    text-decoration: none;
 }
 
 .text_Desk{
@@ -204,7 +221,6 @@ ul li a {
     margin-left: 8px;
 }
 
-
 /* Fin de main */
 
 
@@ -216,14 +232,13 @@ footer{
 }
 
 .pie_pag {
-    width: 100%;
+    width: 100vw;
     display: flex;
     padding: 4rem 3%;
     flex-flow: row wrap;
     justify-content: space-between;
     gap: 2%;
 }
-
 
 /* Contenido 1 pie pag */
 
@@ -263,6 +278,10 @@ footer{
     gap: 2%;
 }
 
+.cont2_pie #cont_pie_nosotros{
+    width: 17%;
+}
+
 .cont_pie_selec{
     margin-bottom: 1rem;
     width: 28%;
@@ -287,6 +306,8 @@ footer{
     width: 32px;
     height: 32px;
     margin-right: 5px;
+    background-repeat: no-repeat;
+    flex: none;
 }
 
 .bi_mail{
@@ -314,6 +335,7 @@ footer{
 .cont_gen_nos{
     width: 100%;
     padding: 2rem 3%;
+    min-width: 360px;
 }
 /* background-color: #86A2BB; */
 
@@ -321,12 +343,36 @@ footer{
 .cont_nosotros{
     width: 100%;
     height: 100%;
-    padding: 1rem 4%;
+    padding: 1rem 22%;
     /* Agregando grillas */
     display: grid;
     gap: 0;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: ". card_1 card_2 .";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "card_1 card_2";
+}
+
+@media ( width < 1020px ) {
+    .cont_nosotros {
+        padding: 1rem 7rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "card_1"
+        "card_2"
+    }
+}
+
+@media ( width < 800px ) {
+    .cont_nosotros {
+        padding: 1rem 7rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media ( width < 600px ) {
+    .cont_nosotros {
+        padding: 1rem 3rem;
+        font-size: 0.875rem;
+    }
 }
 
 .card_nos{
@@ -340,7 +386,6 @@ footer{
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     grid-area: card_1;
     display: flex;
@@ -350,6 +395,12 @@ footer{
 
 .card_1 p{
     padding: 30px;
+    margin: 0 auto;
+}
+
+.card_nos p span{
+    display: block;
+    padding-top: 10px;
 }
 
 .card_img1{
@@ -368,6 +419,13 @@ footer{
 
 
 /* Media queries */
+
+@media (max-width:1320px){
+    #img_principal{
+        height: 55rem;
+        background-size: cover;
+    }
+}
 
 @media (max-width:1360px){
     .iconos_header, .cont_nav{
@@ -388,5 +446,69 @@ footer{
 @media (max-width:800px){
     .cont_nav{
         width: 70%;
+    }
+}
+
+@media (max-width:800px){ 
+    #txt_enunciado{
+        top: 444px;
+        left: 55px;
+        margin-right: 50px;
+    }
+    .txt_enun{
+        font-size: 2.5rem;
+    }
+    .txt_descripcion{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:1360px){
+    #img_principal{
+        background-position-x: center;
+        background-position-y: 0rem;
+    }
+}
+
+@media (max-width:1660px){
+    .pie_pag{
+        padding: 4rem 4%;
+    }
+}
+
+@media (max-width:1320px){
+    .pie_pag{
+        padding: 4rem 8%;
+    }
+    .cont1_pie{
+        order: 2;
+        width: 100%;
+    }
+    .cont2_pie{
+        order: 1;
+        width: 100%;
+    }
+}
+
+@media (max-width:400px){
+    .pie_pag{
+        padding: 3rem 15%;
+    }
+}
+
+@media (max-width:768px) and (min-width:360px){
+    .cont1_pie{
+        width: 100%;
+        order: 2;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:768px) and (min-width:360px){
+    .cont2_pie{
+        order: 1;
+    }
+    .cont2_pie, .cont2_pie #cont_pie_nosotros,.cont_pie_selec{
+        width: 100%;
     }
 }

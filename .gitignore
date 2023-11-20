@@ -47,3 +47,21 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows
+
+
+Colores Primarios
+.c_p1{
+    color: #F1BF7B;
+}
+
+.c_p2{
+    color: #262626; 
+} 
+
+Color secundario
+.c_s1{
+    color: #fbeed9;
+}
+
+para más de 2 columnas
+grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
