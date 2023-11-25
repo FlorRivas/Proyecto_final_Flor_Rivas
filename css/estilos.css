@@ -72,7 +72,7 @@ nav.navegacion {
 
 .cont_logotipo {
     display: flex;
-    width: 16%;
+    width: 13%;
     align-items: center;
     justify-content: start;
 }
@@ -141,7 +141,7 @@ ul li a {
     background-size: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 #img_principal::after {
@@ -225,16 +225,17 @@ ul li a {
 
 
 /* Pag Nosotros */
-#nosotros h2 {
+#nosotros h2, #contactanos h2 {
     font-family: 'Vollkorn-Regular';
     font-size: 2.2rem;
     text-align: center;
     color: #F1BF7B;
+    margin-top: 5rem;
 }
 
 .cont_gen_nos{
     width: 100%;
-    padding: 2rem 3%;
+    padding: 2.5rem 3%;
     min-width: 360px;
 }
 /* background-color: #86A2BB; */
