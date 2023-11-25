@@ -319,6 +319,26 @@ ul li a {
 }
 /* Fin de pag Nosotros */
 
+/* Pag Contactanos */
+
+.c_primary{
+    color: #F1BF7B;
+}
+
+#contactanos input,
+#contactanos textarea{
+    color: #FBEED9;
+    /* background-color: #262626; */
+    border: 1px solid #F1BF7B;
+    box-shadow: none;
+    font-weight: inherit;
+}
+
+textarea{
+    resize: none;
+}
+
+/* Fin de pag Contactanos */
 
 /*  Footer */
 

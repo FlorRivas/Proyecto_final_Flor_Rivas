@@ -55,33 +55,70 @@
 
         </nav>
     </header>
+
     <main id="contactanos">
-        <section class="container-fluid">
+        <section class="container-xxl">
           <div class="section_Subtitulo">
             <h2>Cont&#225;ctanos</h2>
           </div>
-          <form>
+          <div class="content_contactanos">
             <div class="row">
-              <div class="col"></div>
-              <div class="col">
-                <div class="col">
-                  <label for="text" class="form-label">Nombre y Apellido:</label>
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-md-5"></div>
+                  <div class="col-md-4"></div>
+                  <div class="col-md-3"></div>
                 </div>
-                <div class="col">
-                  <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
+                <div class="form">
+                  <form method="post" action="/">
+                    <div class="row">
+                      <div class="mb-3 col-lg-6">
+                        <label for="text" class="c_primary form-label">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" required> 
+                      </div>
+                      <div class="mb-3 col-lg-6">
+                        <label for="text" class="c_primary form-label">Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Apellidos"  name="apellidos" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mb-3 col-lg-8">
+                        <label for="inputEmail4" class="c_primary form-label">Email</label>
+                        <input type="email"
+                        class="form-control" placeholder="Ejm:email@mail.com" name="email" id="email" required>
+                      </div>
+                      <div class="mb-3 col-lg-4">
+                        <label for="" class="c_primary form-label">Tel&eacute;fono</label>
+                        <input type="tel" class="form-control" 
+                        name="telefono" id="telefono" placeholder="51+ 999 999 999" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mb-3">
+                        <label for="text" class="c_primary form-label">Asunto</label>
+                        <input type="text" class="form-control" placeholder="Asunto" name="asunto" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mb-3">
+                        <label for="textarea" class="c_primary form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe aquí..." required></textarea>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
-          </form>
+          </div>
         </section>
     </main>
+
     <!-- Footer -->
     <footer>
         <section class="pie_pag">
             <div class="cont1_pie">
-                <img src="./img/marca_por_amor.svg" alt="POR_AMOR" class="logo_footer mg_btm_pie">
+                <img src="../img/marca_por_amor.svg" alt="POR_AMOR" class="logo_footer mg_btm_pie">
                 <p class="text_gen_pie">Copyright &copy; 2023 POR AMOR | Todos los derechos reservados</p>
             </div>
             <div class="cont2_pie">
