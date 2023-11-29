@@ -1,0 +1,11 @@
+{
+  "name": "pag_por_amor",
+  "version": "1.0.0",
+  "description": "Proyecto Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flor Rivas Luna",
+  "license": "ISC"
+}
