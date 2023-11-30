@@ -1,0 +1,9 @@
+@media ( width < 1020px){
+    .cont_nosotros {
+        padding: 1rem 7rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "card_1"
+        "card_2"
+    }
+}
