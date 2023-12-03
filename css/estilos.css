@@ -30,6 +30,7 @@ body {
   background-color: #262626;
   overflow-x: hidden;
   font-weight: lighter;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -58,18 +59,18 @@ header {
 }
 
 .navegacion {
-  display: flex;
   width: 100%;
   height: 96px;
   background: #262626;
+  display: flex;
   align-items: center;
-  padding: 0 2.3rem 0 3rem;
   justify-content: space-between;
+  padding: 0 2.3rem 0 3rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
 }
 .navegacion .cont_logotipo {
-  display: flex;
   width: 13%;
+  display: flex;
   align-items: center;
   justify-content: start;
 }
@@ -77,28 +78,29 @@ header {
   width: 14.375rem;
   min-width: 11.5625rem;
 }
-.navegacion .cont_nav {
+.navegacion .nav__cont {
   width: 42%;
   font-family: "Vollkorn-Regular";
   font-size: 1.3rem;
   margin: 0 auto;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-around;
 }
-.navegacion .cont_nav .nav_item {
+.navegacion .nav__cont .nav__item {
   position: relative;
   padding: 10px;
 }
-.navegacion .cont_nav .nav_item a {
+.navegacion .nav__cont .nav__item a {
   color: #F1BF7B;
   text-decoration: none;
 }
-.navegacion .cont_nav .nav_item a:hover {
+.navegacion .nav__cont .nav__item a:hover {
   color: #FBEED9;
 }
 .navegacion .iconos_header {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
 }
 .navegacion .iconos_header .wh_iconos {

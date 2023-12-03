@@ -8,3 +8,11 @@ $c-primario-2:#F1BF7B;
 $c-secun-1:#FBEED9;
 $c-secun-3:#6B0A05;
 $c-secun-2:#86A2BB;
+
+@use 'sass:math';
+
+@function pixeles-rem($pixeles){
+    $rem:math.div($pixeles, 16)*1rem;
+
+    @return $rem;
+}
