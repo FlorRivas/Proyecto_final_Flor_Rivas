@@ -11,6 +11,12 @@ $c-secun-2:#86A2BB;
 
 @use 'sass:math';
 
+@mixin crear-flexbox($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
 @function pixeles-rem($pixeles){
     $rem:math.div($pixeles, 16)*1rem;
 

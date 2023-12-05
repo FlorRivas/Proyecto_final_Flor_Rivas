@@ -3,8 +3,22 @@
 @import "./partials/general";
 @import "./partials/variables";
 
+
 .active{
     color: $c-secun-1;
 }
+
+.ps_relative{
+    position: relative; 
+}
+
+.ps_absolute {
+    position: absolute;
+}
+
+.dp_block{
+    display: block;
+}
+
 
 @import "./partials/queries"

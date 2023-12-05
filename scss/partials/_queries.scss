@@ -1,9 +1,23 @@
-@media ( width < 1020px){
+@media ( width < 1020px ) {
     .cont_nosotros {
         padding: 1rem 7rem;
         grid-template-columns: 1fr;
         grid-template-areas:
         "card_1"
         "card_2"
+    }
+}
+
+@media ( width < 800px ) {
+    .cont_nosotros {
+        padding: 1rem 7rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media ( width < 600px ) {
+    .cont_nosotros {
+        padding: 1rem 3rem;
+        font-size: 0.875rem;
     }
 }

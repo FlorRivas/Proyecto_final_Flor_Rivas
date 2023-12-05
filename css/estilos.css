@@ -120,8 +120,36 @@ header {
   box-shadow: none;
 }
 
+.cont_portada {
+  z-index: 1;
+  left: 80px;
+  top: 380px;
+}
+.cont_portada .txt_descripcion {
+  font-family: "Montserrat-Regular";
+  font-size: 1.875rem;
+  margin-bottom: 0;
+  color: #FBEED9;
+}
+
+h1.pdd_bottom {
+  padding-bottom: 36px;
+}
+
 .active {
   color: #FBEED9;
+}
+
+.ps_relative {
+  position: relative;
+}
+
+.ps_absolute {
+  position: absolute;
+}
+
+.dp_block {
+  display: block;
 }
 
 @media (width < 1020px) {
@@ -129,6 +157,18 @@ header {
     padding: 1rem 7rem;
     grid-template-columns: 1fr;
     grid-template-areas: "card_1" "card_2";
+  }
+}
+@media (width < 800px) {
+  .cont_nosotros {
+    padding: 1rem 7rem;
+    font-size: 0.875rem;
+  }
+}
+@media (width < 600px) {
+  .cont_nosotros {
+    padding: 1rem 3rem;
+    font-size: 0.875rem;
   }
 }
 

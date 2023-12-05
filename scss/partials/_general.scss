@@ -1,4 +1,7 @@
+@use 'variables';
 @import "./variables";
+
+
 
 body {
     width: $ancho;
@@ -37,21 +40,18 @@ header{
     z-index: 10;
 }
 
+
 .navegacion{
     width: $ancho;
     height: $h-px * 9.6;
     background: #262626;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include variables.crear-flexbox(space-between);
     padding: 0 2.3rem 0 3rem;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
 
     .cont_logotipo{
         width: 13%;
-        display: flex;
-        align-items: center;
-        justify-content: start;
+        @include variables.crear-flexbox(start);
 
         .class_logo{
             width: $tamanio * 14.375;
@@ -63,9 +63,7 @@ header{
         font-family: 'Vollkorn-Regular';
         font-size: $tamanio * 1.3;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include variables.crear-flexbox(space-around);
 
         .nav__item{
             position: relative;
@@ -83,9 +81,8 @@ header{
     }
 
     .iconos_header{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        @include variables.crear-flexbox(flex-end);
+        
 
         .wh_iconos{
             width: $w-px * 3;
@@ -101,13 +98,28 @@ header{
         width: $ancho;
         height: 36px;
         padding: $w-px - 2;
-        border-radius: 15px;
+        border-radius: $w-px + 5;
         font-size: .9rem;
         background-color: $c-secun-1;
         box-shadow: none;
     }
 }
 
-.cont_general{
-    
+.cont_portada{
+
+    z-index: 1;
+    left: $w-px * 8;
+    top: $w-px * 38;  
+
+    .txt_descripcion {
+        font-family: 'Montserrat-Regular';
+        font-size: variables.pixeles-rem(30);
+        margin-bottom: 0;
+        color: $c-secun-1;
+    }
+
+}
+
+h1.pdd_bottom{
+    padding-bottom: $w-px * 3 + 6;
 }
